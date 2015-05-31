@@ -89,12 +89,27 @@ mode default in detail:
 
 **更新**
 
-最不清晰的层次也应该有 4x2 个切图，而不是整张，不然效果太差。
+最不清晰的层次也应该有 4x2 个切图，而不是整张，不然效果太差。:broken_heart:
 
 **TODO**
 
 * 切图应当集中在低纬度区域
 * ？或许不加载就可以，切图还是正方着切
+
+切图策略：(用 L0 表示最清晰，L1 其次。。。L9 表示最不清晰层次(当然不一定有 10=9+1 层))
+
+0. 初始化，L9 层要全加载
+0. 延迟加载从 L9 扩散到 L0
+0. 扩散到屏幕边缘多一点(用 fov 和大致的宽高比衡量)，进行 Level 变化
+0. 每个 Level 分为三部分界限为 i. Level Up ii. 停止扩散
+
+### 修正后的方案 :star:
+
+* 512x512 ==> 256x256
+* resizing ==> tiling ==> uploading ==> cleaning
+
+See ImageMagick 脚本: [gen.sh](gen.sh)
+
 
 ### Snippets
 
