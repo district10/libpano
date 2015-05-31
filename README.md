@@ -111,6 +111,8 @@ do
 done
 ```
 
+* [gnat - imgcropping - Coding.net](https://coding.net/u/gnat/p/imgcropping/git)
+
 ### May be useful
 
 * [GraphicsMagick Core C API](http://www.graphicsmagick.org/api/api.html)
