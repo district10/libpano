@@ -9,15 +9,18 @@ Ours:
 
 > Original image size: 8192 x 4096
 
-* L0: `[ 8192 x 4096 ]` ~18.65MB ===> `[512 x 512]` (about 180KB)
-* L1: `[ 4096 x 2048 ]` ~ 4.48MB ===> `[512 x 512]`
-* L2: `[ 2048 x 1024 ]` ~ 1.18MB ===> `[512 x 512]`
-* L3: `[ 1024 x  512 ]` ~339.0KB ===> `[512 x 512]`
-* L4: `[  512 x  256 ]` ~ 98.6KB ===> `[ -1 x  -1]`
-* L5: `[  256 x  128 ]` ~ 29.8KB ===> `[ -1 x  -1]`
-* L6: `[  128 x   64 ]` ~  9.7KB ===> `[ -1 x  -1]`
+| level |  geometry |      filesize | subimage geometry            |
+| :---: | :------------: | :------: | :--------------------------: |
+| L0 | `[ 8192 x 4096 ]` | ~18.65MB | `[512 x 512]`  (about 180KB) |
+| L1 | `[ 4096 x 2048 ]` | ~ 4.48MB | `[512 x 512]`                |
+| L2 | `[ 2048 x 1024 ]` | ~ 1.18MB | `[512 x 512]`                |
+| L3 | `[ 1024 x  512 ]` | ~339.0KB | `[512 x 512]`                |
+| L4 | `[  512 x  256 ]` | ~ 98.6KB | `[ -1 x  -1]`                |
+| L5 | `[  256 x  128 ]` | ~ 29.8KB | `[ -1 x  -1]`                |
+| L6 | `[  128 x   64 ]` | ~  9.7KB | `[ -1 x  -1]`                |
 
 ![And Now a Touch of Magick](http://www.imagemagick.org/image/wizard.jpg)
+
 Use [ImageMagick](http://www.imagemagick.org/Usage/) to process images:
 
 ```shell
@@ -77,7 +80,7 @@ $ ls *L0-* | wc -l
 
 mode default in detail:
 
-* filename: '*<orginal file basename>*-L**%d**-**%d**.<orginal file extension>' (no zero padding)
+* filename: '*<orginal file basename>*-L**%d**\[-**%d**\].<orginal file extension>' (no zero padding)
 * examples:
     + original filename: `libpano.jpg`
     + `libpano-L0-1.jpg`
