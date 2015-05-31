@@ -65,7 +65,7 @@ $ ls *L0-* | wc -l
 `info/mode/0`
 ```json
 {
-  "mode": "default",
+  "mode": "default", // 规则切片
   "levels": [
     128, // "-L0-%d", 0~127
     32,  // "-L1-%d", 0~31
