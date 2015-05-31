@@ -87,6 +87,15 @@ mode default in detail:
     + `libpano-L2-23.jpg`
     + `libpano-L4.jpg`
 
+**更新**
+
+最不清晰的层次也应该有 4x2 个切图，而不是整张，不然效果太差。
+
+**TODO**
+
+* 切图应当集中在低纬度区域
+* ？或许不加载就可以，切图还是正方着切
+
 ### Snippets
 
 ImageMagick
