@@ -21,7 +21,7 @@ Ours:
 
 ![And Now a Touch of Magick](http://www.imagemagick.org/image/wizard.jpg)
 
-Use [ImageMagick](http://www.imagemagick.org/Usage/) to process images:
+Use [ImageMagick](http://www.imagemagick.org/Usage/ "老牌神器、跨平台、脚本运行，也可调用 C 接口") to process images:
 
 ```shell
 # miamapping
@@ -80,7 +80,7 @@ $ ls *L0-* | wc -l
 
 mode default in detail:
 
-* filename: '*<orginal file basename>*-L**%d**\[-**%d**\].<orginal file extension>' (no zero padding)
+* filename: '*<orginal file basename>*-L**%d**\[-**%d**\].<orginal file extension>' (no zero padding (?pros&cons of no padding)) 
 * examples:
     + original filename: `libpano.jpg`
     + `libpano-L0-1.jpg`
