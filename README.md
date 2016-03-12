@@ -1,3 +1,4 @@
+全景图片的预处理。
 
 ### Mipmap
 
@@ -134,8 +135,6 @@ do
     cd ..
 done
 ```
-
-* [gnat - imgcropping - Coding.net](https://coding.net/u/gnat/p/imgcropping/git)
 
 ### May be useful
 
